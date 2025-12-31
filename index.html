@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login | Demo App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+
+    .login-container {
+      background: #ffffff;
+      padding: 30px;
+      width: 320px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      font-size: 14px;
+      color: #555;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #667eea;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #5a67d8;
+    }
+
+    .note {
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+
+    <form onsubmit="login(event)">
+      <label>Email</label>
+      <input type="email" id="email" placeholder="user@example.com" required />
+
+      <label>Password</label>
+      <input type="password" id="password" placeholder="********" required />
+
+      <button type="submit">Sign In</button>
+    </form>
+
+    <div class="note">
+      Demo page for S3 Static Website Hosting
+    </div>
+  </div>
+
+  <script>
+    function login(e) {
+      e.preventDefault();
+      alert("Login button clicked (frontend-only test)");
+    }
+  </script>
+</body>
+</html>
